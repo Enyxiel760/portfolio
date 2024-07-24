@@ -125,7 +125,6 @@ a{
 .project-title:hover {
   color:var(--color4);
   transition:1s;
-  transform:scale(1.5);
 }
 
 #contact {
