@@ -29,7 +29,7 @@ a {
 }
 
 .btn {
-  padding: auto;
+  padding: 10px 20px;
   height: auto;
   font-size: 1em;
   font-weight: 900;
@@ -127,6 +127,7 @@ nav > ul {
   text-align: center;
   height: 200px;
   margin-top: 150px;
+  flex-wrap: wrap;
 }
 
 #hero > h2 {
@@ -157,6 +158,12 @@ nav > ul {
 @media (max-width: 650px) {
   #hero {
     margin-top: 240px;
+  }
+  footer > ul {
+    justify-content: center;
+  }
+  footer > span {
+    justify-content: center;
   }
 }
 

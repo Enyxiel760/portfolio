@@ -3,7 +3,7 @@
   <head>
     <link rel="stylesheet" href="./styles.css">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Landing Page</title>
   </head>
   <body>
@@ -15,11 +15,11 @@
         alt="EcoBreeze logo">
         </div>
 
-        <nav id="nav-bar">        
+        <nav id="nav-bar" aria-label="Main Navigation">        
           <ul>
-            <li><a href="#features" class="nav-link">Features</a></li>
-            <li><a href="#why-ecobreeze" class="nav-link">Why EcoBreeze?</a></li>
-            <li><a href="#product" class="nav-link">Product</a></li>
+            <li><a href="#features" class="nav-link" aria-label="Features Section">Features</a></li>
+            <li><a href="#why-ecobreeze" class="nav-link" aria-label="Why EcoBreeze Section">Why EcoBreeze?</a></li>
+            <li><a href="#product" class="nav-link" aria-label="Product Section">Product</a></li>
           </ul>
         </nav>      
       </header>
@@ -63,7 +63,8 @@
           frameborder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
           referrerpolicy="strict-origin-when-cross-origin" 
-          allowfullscreen></iframe>
+          allowfullscreen
+          alt="EcoBreeze Product Video"></iframe>
         </section>
 
         <footer>
