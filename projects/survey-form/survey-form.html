@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Quick Survey</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="center-text">Quick Survey Form</h1>
+            <p id="description" class="description-center-text">I appreciate you taking the time to answer these questions.</p>
+        </header>
+        <hr>
+
+        <form id="survey-form">
+            <div class="form-element">
+                <!--name-->
+                <label id="name-label" for="name">Name: </label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="form-item"
+                    placeholder="Enter your name"
+                    required
+                    maxlength="100"
+                    aria-labelledby="name-label"
+                />
+            </div>
+
+            <div class="form-element">
+                <!--email-->
+                <label id="email-label" for="email">Email: </label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-item"
+                    placeholder="Enter your email"
+                    required
+                    aria-labelledby="email-label"
+                />  
+            </div>
+
+            <div class="form-element">
+                <!--age-->
+                <label id="number-label" for="number">Age <small>(optional)</small>: </label>
+                <input
+                    type="number"
+                    id="number"
+                    name="age"
+                    class="form-item"
+                    placeholder="Age"
+                    min="18"
+                    max="110"
+                    aria-labelledby="number-label"
+                />
+            </div>
+
+            <div class="form-element">
+                <!--dropdown-->
+                <label id="dropdown-label" for="dropdown">How did you hear about our service? </label>
+                <select id="dropdown" name="dropdown" class="form-item" required aria-labelledby="dropdown-label">
+                    <option disabled selected value>Pick an option</option>
+                    <option value="advertisement">Advertisement</option>
+                    <option value="search-engine">Search engine</option>
+                    <option value="friend">Friend</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-element radio">
+                <!--radio-->
+                <p>How often do you use our service?</p>
+                <label id="daily-label" for="daily">
+                    <input
+                        type="radio"
+                        id="daily"
+                        name="service-usage"
+                        class="form-radio"
+                        value="daily"
+                        checked
+                        aria-labelledby="daily-label"
+                    />Daily</label
+                >
+                <label id="weekly-label" for="weekly">
+                    <input
+                        type="radio"
+                        id="weekly"
+                        name="service-usage"
+                        class="form-radio"
+                        value="weekly"
+                        aria-labelledby="weekly-label"
+                    />Weekly</label
+                >
+                <label id="monthly-label" for="monthly">
+                    <input
+                        type="radio"
+                        id="monthly"
+                        name="service-usage"
+                        class="form-radio"
+                        value="monthly"
+                        aria-labelledby="monthly-label"
+                    />Monthly</label
+                >
+                <label id="rarely-label" for="rarely">
+                    <input
+                        type="radio"
+                        id="rarely"
+                        name="service-usage"
+                        class="form-radio"
+                        value="rarely"
+                        aria-labelledby="rarely-label"
+                    />Rarely</label
+                >
+            </div>
+
+            <div class="form-element checkbox">
+                <!--checkbox-->
+                <p>Which of the following devices do you own? (Select all that apply)</p>
+              <div class=checkbox-container>
+                <label id="android-phone-label" for="android-phone">
+                    <input
+                        type="checkbox"
+                        id="android-phone"
+                        name="android-phone"
+                        class="form-checkbox"
+                        value="android-phone"
+                        aria-labelledby="android-phone-label"
+                    />Android Phone</label
+                >
+                <label id="iphone-label" for="iphone">
+                    <input
+                        type="checkbox"
+                        id="iphone"
+                        name="iphone"
+                        class="form-checkbox"
+                        value="iphone"
+                        aria-labelledby="iphone-label"
+                    />Apple Phone</label
+                >
+                <label id="android-tablet-label" for="android-tablet">
+                    <input
+                        type="checkbox"
+                        id="android-tablet"
+                        name="android-tablet"
+                        class="form-checkbox"
+                        value="android-tablet"
+                        aria-labelledby="android-tablet-label"
+                    />Android tablet</label
+                >
+                <label id="ipad-label" for="ipad">
+                    <input
+                        type="checkbox"
+                        id="ipad"
+                        name="ipad"
+                        class="form-checkbox"
+                        value="ipad"
+                        aria-labelledby="ipad-label"
+                    />Ipad</label
+                >
+                <label id="laptop-label" for="laptop">
+                    <input
+                        type="checkbox"
+                        id="laptop"
+                        name="laptop"
+                        class="form-checkbox"
+                        value="laptop"
+                        aria-labelledby="laptop-label"
+                    />Laptop</label
+                >
+                <label id="pc-label" for="pc">
+                    <input
+                        type="checkbox"
+                        id="pc"
+                        name="pc"
+                        class="form-checkbox"
+                        value="pc"
+                        aria-labelledby="pc-label"
+                    />PC</label
+                >
+                <label id="console-label" for="console">
+                    <input
+                        type="checkbox"
+                        id="console"
+                        name="console"
+                        class="form-checkbox"
+                        value="console"
+                        aria-labelledby="console-label"
+                    />Games Console</label
+                >
+                <label id="smart-tv-label" for="smart-tv">
+                    <input
+                        type="checkbox"
+                        id="smart-tv"
+                        name="smart-tv"
+                        class="form-checkbox"
+                        value="smart-tv"
+                        aria-labelledby="smart-tv-label"
+                    />Smart TV</label
+                  ></div>
+            </div>
+
+            <div class="form-element">
+                <!--textarea-->
+                <p>Are there any features you'd like to see?</p>
+                <textarea
+                    id="comments"
+                    name="comments"
+                    class="form-comments"
+                    placeholder="Enter your comments here..."
+                    aria-labelledby="comments-label"
+                    ></textarea>
+            </div>
+
+            <div class="form-element">
+                <!--submit-->
+                <button type="submit" id="submit" class="form-submit" aria-labelledby="submit">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

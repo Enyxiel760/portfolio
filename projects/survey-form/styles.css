@@ -1,0 +1,89 @@
+body {
+    background: radial-gradient(circle, rgba(118,171,174,1) 0%, rgba(0,0,0,1) 100%);
+    color: #eeeeee;
+    font-family: Verdana, Geneva, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.form-element.radio *:not(p), .form-element.checkbox *:not(p) {
+    color: #ffffff;
+}
+
+.container {
+    background: #31363f;
+    color: #76abae;
+    font-size: 1em;
+    padding: 2em;
+    margin: 2em auto;
+    max-width: 30em;
+    border-radius: 8px;
+}
+
+#title, #description {
+    text-align: center;
+    margin: 0 0 1em 0;
+}
+
+#survey-form {
+    padding: 2em 0;
+}
+
+.form-element {
+    margin: 1em 0;
+}
+
+label {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+input[type="text"], input[type="email"], input[type="number"], #dropdown, textarea {
+    width: 100%;
+    background: #222831;
+    color: #eeeeee;
+    border: 1px solid #76abae;
+    padding: 0.5em;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 0; /* Ensure no extra margins */
+}
+
+textarea {
+    resize: none;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 0.5em;
+}
+
+button {
+    width: 100%;
+    background: #108f10;
+    color: white;
+    font-size: 18px;
+    padding: 0.5em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0a6c0a;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 1em;
+        margin: 1em;
+    }
+    
+    input[type="text"], input[type="email"], input[type="number"], #dropdown, textarea {
+        font-size: 0.9em;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}
