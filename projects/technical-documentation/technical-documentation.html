@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="./styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+      <nav id="navbar">
+        <header>Python Documentation</header>
+        <ul>
+          <li><a href="#python_introduction" class="nav-link">Python Introduction</a></li>
+          <li><a href="#getting_started" class="nav-link">Getting Started</a></li>
+          <li><a href="#python_syntax" class="nav-link">Python Syntax</a></li>
+          <li><a href="#python_comments" class="nav-link">Python Comments</a></li>
+          <li><a href="#python_variables" class="nav-link">Python Variables</a></li>
+        </ul>
+      </nav>
+    <main id="main-doc">
+      <section class="main-section" id="python_introduction">
+        <header>Python Introduction</header>
+        <h3>What is Python?</h3>
+        <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
+        <p>It is used for:</p>
+        <ul>
+          <li>Web development (server-side),</li>
+          <li>Software development,</li>
+          <li>Mathematics,</li>
+          <li>System scripting.</li>
+        </ul>
+        <h3>What can Python do?</h3>
+        <ul>
+          <li>Python can be used on a server to create web applications.</li>
+          <li>Python can be used alongside software to create workflows.</li>
+          <li>Python can connect to database systems. It can also read and modify files.</li>
+          <li>Python can be used to handle big data and perform complex mathematics.</li>
+          <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="getting_started">
+        <header>Getting Started</header>
+        <h3>Python Install</h3>
+        <p>Many PCs and Macs will have Python already installed.</p>
+        <p>To check if you have Python installed on a Windows PC, search in the start bar for Python or run the following on the Command Line (cmd.exe):</p>
+        <div class="example">
+          <div class="cmd">
+            <code>
+              C:\Users\Your Name>python --version
+            </code>
+          </div>
+        </div>
+        <p>To check if you have Python installed on a Linux or Mac, open the command line or Terminal and type:</p>
+        <div class="example">
+          <div class="cmd">
+            <code>
+              python --version
+            </code>
+          </div>
+        </div>
+        <p>If you find that you do not have Python installed on your computer, you can download it for free from the following website: <a href="https://www.python.org/">https://www.python.org/</a></p>
+      </section>
+
+      <section class="main-section" id="python_syntax">
+        <header>Python Syntax</header>
+        <h3>Execute Python Syntax</h3>
+        <p>As we learned in the previous page, Python syntax can be executed by writing directly in the Command Line:</p>
+        <div class="example"> 
+          <div class="cmd"> 
+            <code>
+              >>> print("Hello, World!")<br>Hello, World!
+            </code>
+          </div>
+        </div>
+        <p>Or by creating a Python file on the server, using the .py file extension, and running it in the Command Line:</p>
+        <div class="example">
+          <div class="cmd">  
+            <code>
+              C:\Users\Your Name>python myfile.py
+            </code>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-section" id="python_comments">
+        <header>Python Comments</header>
+        <p>Comments can be used to explain Python code.</p>
+        <p>Comments can be used to make the code more readable.</p>
+        <p>Comments can be used to prevent execution when testing code.</p>
+        <h3>Creating a Comment</h3>
+        <p>Comments start with a #, and Python will ignore them:</p>
+        <div class="example">
+          <h4>Example</h4>
+          <div class="code">
+            <code>
+              <span class="comment"># This is a comment</span><br>
+              <span class="function">print</span>(<span class="string">"Hello, World!"</span>)
+            </code>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-section" id="python_variables">
+        <header>Python Variables</header>
+        <h3>Variables</h3>
+        <p>Variables are containers for storing data values.</p>
+        <h3>Creating Variables</h3>
+        <p>Python has no command for declaring a variable.</p>
+        <p>A variable is created the moment you first assign a value to it.</p>
+        <div class="example">
+          <h4>Example</h4>
+          <div class="code">
+            <code>
+              x = <span class="number">5</span><br>
+              y = <span class="string">"John"</span><br>
+              <span class="function">print</span>(x)<br>
+              <span class="function">print</span>(y)
+            </code>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
