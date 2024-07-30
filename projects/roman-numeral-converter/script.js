@@ -18,8 +18,6 @@ const reference = [
   const convertBtn = document.getElementById("convert-btn");
   const output = document.getElementById("output")
   
-  convertBtn.addEventListener('click', ()=>{});
-  
   const isInputValid = (str, int) => {
     let errorText = "";
   
@@ -32,6 +30,7 @@ const reference = [
       } else {
         return true
       }
+
     output.classList.remove("hidden")
     output.classList.add("alert")
     output.innerText = errorText
@@ -39,6 +38,7 @@ const reference = [
   
   const convertToRoman = (num) => {
     conversion = [];
+    
     reference.forEach((pair) => {
       while (num >= pair[1]) {
         conversion += pair[0];
